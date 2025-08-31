@@ -1,0 +1,32 @@
+
+
+kernel version of host m/c
+	uname -r
+
+	6.11.0-29-generic
+
+prebuild kernel header dir in host m/c
+
+	ls /lib/modules/6.11.0-29-generic/build/
+
+build kernnel module
+
+ 	make -C /lib/modules/6.11.0-29-generic/build/ M=$PWD modules
+
+clean kernel module
+
+	make -C /lib/modules/6.11.0-29-generic/build/ M=$PWD clean
+
+insert kernel module
+
+	sudo insmod main.ko 
+
+remove kernel module
+
+	sudo rmmod  main.ko 
+
+see kernel module output
+
+	sudo dmesg -w
+
+
