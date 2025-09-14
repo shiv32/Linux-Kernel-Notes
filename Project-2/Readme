@@ -1,0 +1,17 @@
+Commands
+
+Build module for target:
+	$make 
+
+Clean module:
+	$make clean
+
+Help for module:
+	$make help
+
+Build module for host:
+	$make host
+
+------------------------------------
+Check build module architecure type
+	$file main.ko
